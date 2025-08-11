@@ -241,7 +241,7 @@ async def cookies_handler(client: Client, m: Message):
 async def text_to_txt(client, message: Message):
     user_id = str(message.from_user.id)
     # Inform the user to send the text data and its desired file name
-    editable = await message.reply_text(f"<blockquote>Welcome to the Text to .txt Converter!\nSend the **text** for convert into a `.txt` file.</blockquote>")
+    editable = await message.reply_text(f"<blockquote>𝐇𝐞𝐥𝐥𝐨 𝐮𝐩 𝐰𝐚𝐥𝐢 𝐜𝐡𝐨𝐫𝐢 𝐚𝐛𝐛 𝐭𝐱𝐭 𝐟𝐢𝐥𝐞 𝐬𝐞𝐧𝐝 𝐤𝐚𝐫 ☺️</blockquote>")
     input_message: Message = await bot.listen(message.chat.id)
     if not input_message.text:
         await message.reply_text("**Send valid text data**")
@@ -288,7 +288,7 @@ async def getcookies_handler(client: Client, m: Message):
 @bot.on_message(filters.command(["stop"]) )
 async def restart_handler(_, m):
     
-    await m.reply_text("🚦**STOPPED**", True)
+    await m.reply_text("ᵃᶜʰᵃ ᵃᵇᵇ ᵐᵉʳⁱ ʲᵃʳᵘʳᵃᵗ ⁿʰⁱ ʰᵃⁱ 🙂🥲", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
         
 
